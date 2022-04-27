@@ -1,1 +1,22 @@
-ja acabo jessica
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    color: white;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(70, 0, 110);
+    padding: 1em;
+    border-radius: 0.5em;
+}
+
+form {
+    border: 1px solid whitesmoke;
+    border-radius: 0.3em;
+    padding: 0.3em;
+}
