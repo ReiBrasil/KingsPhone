@@ -49,3 +49,7 @@ li {
 ul {
     text-align: right;
 }
+
+a {
+    text-decoration: none;
+}
