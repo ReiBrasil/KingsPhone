@@ -20,3 +20,22 @@ form {
     border-radius: 0.3em;
     padding: 0.3em;
 }
+
+h4 {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+span {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+li {
+    background-color: rgb(221, 221, 221);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 0.3em;
+    padding: 0.3em;
+}
