@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" ng-app="kingsPhone">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="app.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
 
     <script src="app.js"></script>
     <title>KingsPhone</title>
@@ -26,7 +27,7 @@
     </header>
 
     <br>
-    
+    <div class="container" ng-controller="Home">
 <h2>Catalogo</h2>
 
     <ul id="lista">
@@ -52,11 +53,30 @@
     
             <h4>'Redmi 10 64, xaiomi,</h4>
             <br>
-            <span>'Modelo de smarthphone da xaiomi com 4 cameras.'</span>
-    
+            <span>'Modelo de smarthphone da xaiomi com 4 cameras.'</span> 
+        
         </li>
 
-    </ul>
+    </ul>  
+    <ul id="phoneList">
+        <li ng-repeat="phone in phone">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <img class="img-responsive" ng-src="{{phone.images[0]}}">
+                    <div class="caption text-center">
+                        <h4>{{phone.name}}</h4>
+                        
+                    </div>
+                </div> 
 
+            </div>
+        </li>
+    </ul>
+    
+
+</div>
 </body>
+    
+   
+
 </html>
