@@ -30,33 +30,6 @@
     <div class="container" ng-controller="Home">
 <h2>Catalogo</h2>
 
-    <ul id="lista">
-            <a href="Nokia6310.html"><li>
-
-            <h4>'Nokia 6310,</h4>
-            <br>
-            <span>'Celular modelo nokia tijolão, um classico.'</span>
-    
-            </li></a>
-            <br>
-            <br>
-            <li>
-    
-            <h4>'Windows phone: com Wi-Fi,</h4>
-            <br>
-            <span>'Modelo de celular utilizando o sistema windows.'</span>
-    
-            </li>
-            <br>
-            <br>
-            <li>
-    
-            <h4>'Redmi 10 64, xaiomi,</h4>
-            <br>
-            <span>'Modelo de smarthphone da xaiomi com 4 cameras.'</span> 
-        
-        </li>
-
     </ul>  
     <ul id="phoneList">
         <li ng-repeat="phone in phone">
@@ -65,7 +38,6 @@
                     <img class="img-responsive" ng-src="{{phone.images[0]}}">
                     <div class="caption text-center">
                         <h4>{{phone.name}}</h4>
-                        
                     </div>
                 </div> 
 
