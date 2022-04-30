@@ -17,22 +17,25 @@
         <h1>KingsPhone</h1>
     </div>
     
-    <form action="#" method="post">
-
-    <input type="text" name="pesquisa" id="pesquisa" placeholder="Faça sua Busca" required>
-    <button type="submit">pesquisar<i class="fas fa-pesquisa"></i></button>    
-    
-    </form>
+    <div class="row">
+        <div class="col-md-3">
+            <h3>Search</h3>
+            <input type="text" ng-model="query" placeholder="Search...">
+        </div>
+        <h3>Ordenar por</h3>
+        <select ng-model="orderProp">
+          <option value="name">Brand</option>
+          <option value="description">Description</option>
+        </select>
 
     </header>
 
     <br>
     <div class="container" ng-controller="Home">
-<h2>Catalogo</h2>
+    <h2>Catalogo</h2>
 
-    </ul>  
     <ul id="phoneList">
-        <li ng-repeat="phone in phone">
+        <li ng-repeat="phone in phone | filter:query">
             <div class="panel panel-default">
                 <div class="panel-body">
                     <img class="img-responsive" ng-src="{{phone.images[0]}}">
@@ -40,7 +43,11 @@
                         <h4>{{phone.name}}</h4>
                     </div>
                 </div> 
-
+                <div class="panel-footer text-center">
+                    <a class="btn btn-default" role="button" href="#">
+                    <i class="glyphicon glyphicon-zoom-in"></i> Detalhes
+                    </a> 
+                </div>
             </div>
         </li>
     </ul>
