@@ -28,17 +28,10 @@ h4 {
     justify-content: left;
 }
 
-span {
-    color: black;
-    display: flex;
-    align-items: center;
-    justify-content: right;
-}
-
 li {
     display: inline-block;
-    height: 100px;
-    width: 500px;
+    height: 310px;
+    width: 250px;
     
     background-color: rgb(221, 221, 221);
     border: 1px solid rgb(255, 255, 255);
@@ -47,8 +40,21 @@ li {
 }
 
 ul {
-    text-align: right;
+    text-align: center;
+    align-content: space-around;
 }
+
+img {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    height: 250px;
+    width: 250px;
+}
+
+.panel panel-default {
+    justify-content:space-around;
+  }
 
 a {
     text-decoration: none;
