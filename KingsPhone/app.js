@@ -22,7 +22,7 @@ angular.module('kingsPhone', [])
             {
             "id": "windowsphone", 
                 "images": [
-                    "" 
+                    "img/nokia-lumia-520jpg.jpg" 
                     
                 ], 
                 "name": "Windows phone: com Wi-Fi, sistema windows"
@@ -30,7 +30,7 @@ angular.module('kingsPhone', [])
             {
             "id": "redmi10", 
                 "images": [
-                    "" 
+                    "img/xiaomi-redmi-10.jpg" 
                     
                 ], 
                 "name": "Redmi 10 64, xaiomi com 4 cameras",
