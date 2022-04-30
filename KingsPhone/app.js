@@ -33,7 +33,20 @@ angular.module('kingsPhone', [])
                     "" 
                     
                 ], 
-                "name": "Redmi 10 64, xaiomi com 4 cameras"
+                "name": "Redmi 10 64, xaiomi com 4 cameras",
+                "description": "Hello World"
             }
         ];
     });
+
+    $scope.ui_estado = 'lista';
+$scope.phone = null;
+
+$scope.mostrarDetalhes = function(phone) {
+    $scope.ui_estado = 'detalhes';
+    $scope.phone = phone;
+};
+
+$scope.mostrarLista = function() {
+    $scope.ui_estado = 'lista';
+};

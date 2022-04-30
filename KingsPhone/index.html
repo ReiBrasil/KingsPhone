@@ -44,15 +44,28 @@
                     </div>
                 </div> 
                 <div class="panel-footer text-center">
-                    <a class="btn btn-default" role="button" href="#">
-                    <i class="glyphicon glyphicon-zoom-in"></i> Detalhes
+                    <a href="#" class="btn btn-default" role="button"
+                    ng-click="mostrarDetalhes(telefone)">
+                        <i class="glyphicon glyphicon-zoom-in"></i>
+                        Detalhes
                     </a> 
                 </div>
             </div>
         </li>
     </ul>
-    
-
+    <div ng-show="ui_estado == 'lista'">
+        </div>
+    <div ng-show="ui_estado == 'detalhes'">
+        <div ng-show="ui_estado == 'detalhes'">
+            <h1>
+            <a href="" class="btn btn-default pull-right" role="button" ng-click="mostrarLista()">
+                <i class="glyphicon glyphicon-th-large"></i> Lista
+            </a>
+            {{phone.name}}
+            </h1>
+            <p>{{phone.description}}</p>
+        </div>
+    </div>
 </div>
 </body>
     
