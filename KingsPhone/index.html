@@ -17,49 +17,26 @@
         <h1>KingsPhone</h1>
     </div>
     
-    <form action="#" method="post">
-
-    <input type="text" name="pesquisa" id="pesquisa" placeholder="Faça sua Busca" required>
-    <button type="submit">pesquisar<i class="fas fa-pesquisa"></i></button>    
-    
-    </form>
+    <div class="row">
+        <div class="col-md-3">
+            <h3>Search</h3>
+            <input type="text" ng-model="query" placeholder="Search...">
+        </div>
+        <h3>Ordenar por</h3>
+        <select ng-model="orderProp">
+          <option value="name">Brand</option>
+          <option value="description">Description</option>
+        </select>
 
     </header>
 
     <br>
     <div class="container" ng-controller="Home">
-<h2>Catalogo</h2>
+    <h2>Catalogo</h2>
 
-    <ul id="lista">
-        <li>
-
-            <h4>'Nokia 6310',</h4>
-            <br>
-            <span>'Celular modelo nokia tijolão, um classico.'</span>
-    
-            </li>
-            <br>
-
-            <li>
-    
-            <h4>'Windows phone: com Wi-Fi',</h4>
-            <br>
-            <span>'Modelo de celular utilizando o sistema windows.'</span>
-    
-            </li>
-            <br>
-
-            <li>
-    
-            <h4>'Redmi 10 64, xaiomi',</h4>
-            <br>
-            <span>'Modelo de smarthphone da xaiomi com 4 cameras.'</span> 
-        
-        </li>
-
-    </ul>  
+  
     <ul id="phoneList">
-        <li ng-repeat="phone in phone">
+        <li ng-repeat="phone in phone | filter:query">
             <div class="panel panel-default">
                 <div class="panel-body">
                     <img class="img-responsive" ng-src="{{phone.images[0]}}">
